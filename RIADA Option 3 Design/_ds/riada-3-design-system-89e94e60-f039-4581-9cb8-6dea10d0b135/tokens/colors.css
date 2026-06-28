@@ -1,0 +1,94 @@
+/* ============================================================
+   RIADA — Color tokens
+   Brand colors are LOCKED (per brand system). Do not alter the
+   base palette. Build with the semantic aliases below.
+   ============================================================ */
+
+:root {
+  /* ---- Base palette (locked) ---- */
+  --riada-teal:      #17403E; /* primary brand, wordmark, dark grounds   */
+  --riada-teal-deep: #0E2B29; /* deepest teal, gradient floor            */
+  --riada-coral:     #E2493B; /* signature accent — dots, highlights, CTA*/
+  --riada-coral-deep:#C13A2E; /* pressed / gradient floor for coral      */
+  --riada-charcoal:  #2D2D2D; /* deep neutral ground, secondary dark     */
+  --riada-blush:     #F4CDC6; /* warm light tint, soft surfaces          */
+  --riada-cream:     #FBEFEA; /* light background, paper                  */
+  --riada-white:     #FFFFFF;
+  --riada-ink:       #14302E; /* body text on light                      */
+
+  /* ---- Tonal teal scale (derived, for surfaces & borders) ---- */
+  --riada-teal-900: #0B201F;
+  --riada-teal-800: #0E2B29;
+  --riada-teal-700: #123532;
+  --riada-teal-600: #17403E;
+  --riada-teal-500: #245B58;
+  --riada-teal-400: #3C7А76; /* (visual mid) */
+  --riada-teal-100: #D6E3E1;
+  --riada-teal-50:  #EAF1F0;
+
+  /* ---- Neutral / paper scale ---- */
+  --riada-paper-0:  #FFFFFF;
+  --riada-paper-1:  #FDF7F4; /* faintest warm paper            */
+  --riada-paper-2:  #FBEFEA; /* cream                          */
+  --riada-paper-3:  #F6E4DD; /* warm divider ground            */
+  --riada-line:     #ECDED7; /* hairline on cream              */
+  --riada-line-strong:#DCC9C0;
+
+  /* ---- Coral tints ---- */
+  --riada-coral-100:#F7D6D1;
+  --riada-coral-50: #FCEAE7;
+
+  /* =========================================================
+     Semantic aliases — BUILD WITH THESE
+     ========================================================= */
+
+  /* Surfaces */
+  --surface-page:       var(--riada-cream);
+  --surface-page-warm:  var(--riada-paper-1);
+  --surface-card:       var(--riada-white);
+  --surface-card-warm:  var(--riada-paper-2);
+  --surface-inverse:    var(--riada-teal);
+  --surface-inverse-2:  var(--riada-charcoal);
+  --surface-accent:     var(--riada-coral);
+  --surface-blush:      var(--riada-blush);
+
+  /* Text */
+  --text-strong:    var(--riada-teal);   /* headings on light          */
+  --text-body:      var(--riada-ink);    /* body on light              */
+  --text-muted:     #5C6F6C;             /* secondary on light         */
+  --text-faint:     #8A9794;             /* captions / meta            */
+  --text-on-dark:   var(--riada-white);
+  --text-on-dark-muted: rgba(251,239,234,0.72);
+  --text-accent:    var(--riada-coral);
+
+  /* Lines / borders */
+  --border-hair:    var(--riada-line);
+  --border-strong:  var(--riada-line-strong);
+  --border-on-dark: rgba(255,255,255,0.14);
+  --border-accent:  var(--riada-coral);
+
+  /* Interactive */
+  --action-primary:       var(--riada-coral);
+  --action-primary-hover: #EC5A4D;
+  --action-primary-press: var(--riada-coral-deep);
+  --action-on-primary:    var(--riada-white);
+  --action-secondary-fg:  var(--riada-teal);
+  --action-secondary-bd:  var(--riada-teal);
+  --focus-ring:           rgba(226,73,59,0.55);
+
+  /* Status (kept restrained, brand-tuned) */
+  --status-success: #2E7D6B;
+  --status-warning: #C8862B;
+  --status-danger:  var(--riada-coral-deep);
+  --status-info:    var(--riada-teal-500);
+
+  /* =========================================================
+     Gradients
+     ========================================================= */
+  --riada-gradient-ember: linear-gradient(135deg, #E2493B 0%, #C13A2E 100%); /* @kind color */
+  --riada-gradient-pine:  linear-gradient(135deg, #17403E 0%, #0E2B29 100%); /* @kind color */
+  --riada-gradient-petal: linear-gradient(180deg, #FBEFEA 0%, #F4CDC6 100%); /* @kind color */
+}
+
+/* Fix non-ASCII char that may sneak into derived value */
+:root { --riada-teal-400: #3C7A76; }

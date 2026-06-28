@@ -1,0 +1,10 @@
+/* ============================================================
+   RIADA — Webfonts
+   Lato        → workhorse UI + body sans (matches brand boards)
+   Cormorant   → refined letter-spaced display serif (echoes the
+                 "RIADA" Latin wordmark register)
+   Loaded from Google Fonts CDN. See readme.md → Type for the
+   substitution note (licensed masters can replace these).
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');

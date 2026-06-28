@@ -1,0 +1,11 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Dependencies / build (none committed, but guard anyway)
+node_modules/
+dist/
+.cache/

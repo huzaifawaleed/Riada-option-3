@@ -1,0 +1,64 @@
+/* ============================================================
+   RIADA — Base reset & brand utilities
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--riada-coral); color: #fff; }
+
+/* ---- Brand utility classes (optional helpers) ---- */
+.riada-eyebrow {
+  font-family: var(--eyebrow-font);
+  font-weight: var(--eyebrow-weight);
+  font-size: var(--eyebrow-size);
+  letter-spacing: var(--eyebrow-spacing);
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+
+.riada-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-light);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-tight);
+  color: var(--text-strong);
+}
+
+.riada-spaced-caps {
+  font-family: var(--font-serif);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+}
+
+/* The fine coral rule — a recurring brand device */
+.riada-rule {
+  width: 48px;
+  height: var(--bw-rule);
+  background: var(--riada-coral);
+  border: 0;
+  border-radius: 2px;
+}
+
+/* Coral dot accent (echoes the wordmark dots) */
+.riada-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--riada-coral);
+}
